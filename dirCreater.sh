@@ -4,6 +4,7 @@
 echo 'Make folder...'
 adress=$1;
 newFolderName=$2;
+createParametr=$3;
 cd;
 cd $adress;
 pwd;
@@ -37,6 +38,9 @@ mkdir css js;
 touch css/styles.css js/script.js;
 echo 'Complete!';
 echo '';
+echo 'Make JavaScript'
+echo 'JavaScript complete!';
+
 
 #make css
 echo 'Make CSS'
@@ -47,18 +51,5 @@ margin: 0;
 echo 'CSS complete!';
 echo '';
 
-#make js
-echo 'Make JavaScript & ESLint'
-cd ..;
-cd js;
-touch .eslintrc;
-echo '{
-    "extends": "airbnb/base",
-    "env": {
-        "browser": true,
-        "node": true
-    }  
-}' > .eslintrc;
-echo 'JavaScript complete!';
-echo 'All processes compete! Begin your work!'
+echo 'All compete! Begin your work!'
 echo '';
